@@ -13,11 +13,16 @@
     }
     
     body {
-      background-color: rgb(198, 197, 199);
+      background-color: rgb(224, 224, 224);
     }
     
     h1 {
       font-size: 3em;
+    }
+    .submit-box {
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
     }
 
     .content-box {
@@ -29,8 +34,8 @@
 
     table {
     width: 100%;
-    margin-left: 20px;
     border-collapse: collapse;
+    background-color: white;
     }
     
     th, td {
@@ -50,13 +55,17 @@
     }
     
     label {
+      margin-left: 50%;
       font-weight: bold;
+      font-size: larger;
+      
     }
     
     input[type="text"], input[type="email"] {
       margin: 20px;
       padding: 8px;
       border: 1px solid #ddd;
+      font-size: larger;
       border-radius: 4px;
     }
     
@@ -111,7 +120,7 @@
         <td><b>Finished</b></td>
     </tr>
     <tr>
-        <td><b>Effective Communivation and Project work</b></td>
+        <td><b>Effective Communication and Project work</b></td>
         <td><b>Finished</b></td>
     </tr>
     <tr>
@@ -121,6 +130,7 @@
     </table>
     <br>
 
+    <div class="submit-box">
     <form>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"><br><br>
@@ -128,6 +138,6 @@
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="Submit">
     </form>
-
+    </div>
     </body>
     </html>
