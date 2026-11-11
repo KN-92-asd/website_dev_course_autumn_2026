@@ -1,42 +1,125 @@
 <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>My First HTML Page</title>
         <style>
     h1 {
-      color: rgb(0, 255, 0);
+      color: rgb(64, 0, 255);
+    }
+
+    p {
+      color: blue;
+    }
+    
+    body {
+      background-color: rgb(198, 197, 199);
+    }
+    
+    h1 {
+      font-size: 3em;
+    }
+
+    .content-box {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    }
+
+    table {
+    width: 100%;
+    margin-left: 20px;
+    border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      margin: 20px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #824fb4;
+      color: white;
+      padding: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #41356f;
     }
     </style>
+
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
-        <h1 style="color: rgb(144, 0, 255);"">Kalle</h1>
-        <p>I am 34 years old, im a calm and quiet person. 
-        </p>
-        <img src="kuva.jpg" alt="A picture of me">
+
+        <div class="content-box">
+
+        <h1 style="color: rgb(58, 0, 158);">Kalle</h1>
+        <p ><b>I am 34 years old, im a calm and quiet person. <br>
+            I am currently studying to become an IT support techinician.
+        </b></p>
+        <img src="Kuva.jpg" alt="A picture of me">
+        
 
         <h2>Hobbies</h2>
     <ol>
         <li>Gaming</li>
-        <li>Making games</li>
+        <li>Developing games</li>
         <li>Playing guitar</li>
     </ol>
-    <a href="https://www.youtube.com">Watch funny videos</a>
+    <a href="https://www.linkedin.com/in/kalle-nummi-b42bb238b">My Linkedin</a>
+    </div>
 
     <table>
     <tr>
         <th>Studies</th>
-        <th>Assignments</th>
+        <th>Status</th>
     </tr>
     <tr>
-        <td>Basics of ict, done</td>
-        <td>left, 13</td>
+        <td><b>Basics of ICT Infrastructure and Cloud services</b></td>
+        <td><b>Finished</b></td>
     </tr>
     <tr>
-        <td>digital services, done</td>
-        <td>done, 29</td>
+        <td><b>Basics  of Digital service</b></td>
+        <td><b>Finished</b></td>
+    </tr>
+    <tr>
+        <td><b>Effective Communivation and Project work</b></td>
+        <td><b>Finished</b></td>
+    </tr>
+    <tr>
+        <td><b>Web site Development</b></td>
+        <td><b>Ongoing</b></td>
     </tr>
     </table>
+    <br>
 
     <form>
     <label for="name">Name:</label>
@@ -45,5 +128,6 @@
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="Submit">
     </form>
+
     </body>
     </html>
