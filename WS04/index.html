@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My First HTML Page</title>
+        <style>
+    h1 {
+      color: rgb(64, 0, 255);
+    }
+
+    p {
+      color: blue;
+    }
+    
+    body {
+      background-color: rgb(224, 224, 224);
+    }
+    
+    h1 {
+      font-size: 3em;
+    }
+    .submit-box {
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    }
+
+    .content-box {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      margin-left: 50%;
+      font-weight: bold;
+      font-size: larger;
+      
+    }
+    
+    input[type="text"], input[type="email"] {
+      margin: 20px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      font-size: larger;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #824fb4;
+      color: white;
+      padding: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #41356f;
+    }
+
+     .transition-button {
+        margin-left: 50%;
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+
+    .animation-box {
+        padding: 20px;
+        margin-left: 48%;
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: -100px;
+        }
+        to {
+          left: 200px;
+        }
+      }
+
+      .pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+
+      .filter-image {
+        margin-left: 45%;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+      .quote {
+        margin-left: 48%;
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        margin-left: -1%;
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: rgb(8, 5, 5);
+      }
+    </style>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <div class="content-box">
+
+        <h1 style="color: rgb(58, 0, 158);">Kalle</h1>
+        <p ><b>I am 34 years old, im a calm and quiet person. <br>
+            I am currently studying to become an IT support techinician.
+        </b></p>
+        <img src="Kuva.jpg" alt="A picture of me">
+        
+
+        <h2>Hobbies</h2>
+    <ol>
+        <li>Gaming</li>
+        <li>Developing games</li>
+        <li>Playing guitar</li>
+    </ol>
+    <a href="https://www.linkedin.com/in/kalle-nummi-b42bb238b">My Linkedin</a>
+    </div>
+
+    <table>
+    <tr>
+        <th>Studies</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td><b>Basics of ICT Infrastructure and Cloud services</b></td>
+        <td><b>Finished</b></td>
+    </tr>
+    <tr>
+        <td><b>Basics  of Digital service</b></td>
+        <td><b>Finished</b></td>
+    </tr>
+    <tr>
+        <td><b>Effective Communication and Project work</b></td>
+        <td><b>Finished</b></td>
+    </tr>
+    <tr>
+        <td><b>Web site Development</b></td>
+        <td><b>Ongoing</b></td>
+    </tr>
+    </table>
+    <br>
+    <button class="transition-button">Hover me</button>
+    <br>
+    <div class="animation-box"></div>
+    <ul class="pseudo-list">
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Milk</li>
+        <li>Butter</li>
+      </ul>
+    <img src="duck.jpg" alt="Sample Image" class="filter-image">
+    <blockquote class="quote">
+        This is a Duck.
+      </blockquote>
+    <div class="submit-box">
+    <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+    </body>
+    </html>
