@@ -81,6 +81,73 @@
     input[type="submit"]:hover {
       background-color: #41356f;
     }
+
+     .transition-button {
+        margin-left: 50%;
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+
+    .animation-box {
+        padding: 20px;
+        margin-left: 48%;
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: -100px;
+        }
+        to {
+          left: 200px;
+        }
+      }
+
+      .pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+
+      .filter-image {
+        margin-left: 45%;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+      .quote {
+        margin-left: 48%;
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        margin-left: -1%;
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: rgb(8, 5, 5);
+      }
     </style>
 
         <link rel="stylesheet" href="styles.css">
@@ -129,7 +196,19 @@
     </tr>
     </table>
     <br>
-
+    <button class="transition-button">Hover me</button>
+    <br>
+    <div class="animation-box"></div>
+    <ul class="pseudo-list">
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Milk</li>
+        <li>Butter</li>
+      </ul>
+    <img src="duck.jpg" alt="Sample Image" class="filter-image">
+    <blockquote class="quote">
+        This is a Duck.
+      </blockquote>
     <div class="submit-box">
     <form>
     <label for="name">Name:</label>
